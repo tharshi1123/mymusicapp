@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  body{
+background-image: url("https://i.pinimg.com/originals/d6/68/ab/d668abc72809303852c27275e6a56775.gif");
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:black;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Music player</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/material/24/000000/music--v2.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body style="background-color:#f0e6ce;">
+  <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="ED shereen.html">ED Shereen </a></li>
+  <li><a href="justinbieber.html">Justin Bieber</a></li>
+  <li><a href="taylorswift.html">Taylor swift</a></li>
+  <li><a href="alanwalker.html">Alan Walker</a></li>
+</ul>
+  <!-- #### header###### -->
+  <header>
+  <center><h1>Songs Of ED Shereen <br>Enjoy Yourself</h1></center>
+</header>
+
+<!-- ##### Song Language Area Start ##### -->
+<section class="events-area section-padding-100">
+    <div class="container">
+        <div class="row">
+
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img style="height:250px; width: 700px;" src="https://1.bp.blogspot.com/-KzB9v_9u-iw/VnKuGWPC9AI/AAAAAAAAABU/it0R7eyUwg0/s280/t0004311-5.jpg" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>our kanam uyire nee piriyakoodathe</h4>
+
+                      <button type="button" name="button" id="start-t1" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-t1" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img  style="height:250px; width: 700px;" src="https://www.thehindu.com/entertainment/movies/73eto8/article29449285.ece/ALTERNATES/LANDSCAPE_615/bigil" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Unnakaka vaala nenaikiren</h4>
+
+                      <button type="button" name="button" id="start-t2" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-t2" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img style="height:250px; width: 700px;"  src="https://i.ytimg.com/vi/qfAJxAbUGNI/maxresdefault.jpg" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Engae ennathu kavithai</h4>
+
+                      <button type="button" name="button" id="start-t3" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-t3" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+
+           <!--  Song Language Area -->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img style="height:250px; width: 700px;"  src="https://4.bp.blogspot.com/-WK9DDbrkvVA/VSN_mCjf83I/AAAAAAAABpc/Dtt88Q-b7M4/s1600/maxresdefault.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h4>Munbe vaa en anbe vaa</h4>
+
+                    <button type="button" name="button" id="start-h1" class="btn btn-light w-25">play</button>
+                    <button type="button" name="button" id="stop-h1" class="btn btn-light w-25">stop</button>
+                </div>
+            </div>
+        </div>
+        <!--  Song Language Area -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img style="height:250px; width: 700px;"  src="https://a10.gaanacdn.com/images/albums/45/57245/crop_480x480_57245.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h4>Aaruyire mannipaya</h4>
+
+                    <button type="button" name="button" id="start-h2" class="btn btn-light w-25">play</button>
+                    <button type="button" name="button" id="stop-h2" class="btn btn-light w-25">stop</button>
+                </div>
+            </div>
+        </div>
+        <!--  Song Language Area -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img  style="height:250px; width: 700px;"  src="https://theprimetime.in/wp-content/uploads/2019/11/Enai-Noki-Paayum-Thota-released-soon-1280x720.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h4>Maruvaarthai pesathe</h4>
+
+                    <button type="button" name="button" id="start-h3" class="btn btn-light w-25">play</button>
+                    <button type="button" name="button" id="stop-h3" class="btn btn-light w-25">stop</button>
+                </div>
+            </div>
+        </div>
+        
+         <!--  Song Language Area -->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img style="height:250px; width: 7000px;"  src="https://a10.gaanacdn.com/gn_img/albums/koMWQ4B3qL/oMWQYQwPWq/size_xxl_1563781180.webp" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>AMigo</h4>
+
+                  <button type="button" name="button" id="start-h1" class="btn btn-light w-25">play</button>
+                  <button type="button" name="button" id="stop-h1" class="btn btn-light w-25">stop</button>
+              </div>
+          </div>
+      </div>
+      <!--  Song Language Area -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img style="height:250px; width: 700px;"  src="https://cdn.pinkvilla.com/files/styles/contentpreview/public/pattas.jpg?itok=1CXqdhwl" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>Chill bro</h4>
+
+                  <button type="button" name="button" id="start-h2" class="btn btn-light w-25">play</button>
+                  <button type="button" name="button" id="stop-h2" class="btn btn-light w-25">stop</button>
+              </div>
+          </div>
+      </div>
+      <!--  Song Language Area -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img style="height:250px; width: 700px;"  src="https://static.moviecrow.com/marquee/bigil-first-single-track---singa-penne-to-release-on-this-date/165270_thumb_665.jpg" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>Singappenne</h4>
+
+                  <button type="button" name="button" id="start-h3" class="btn btn-light w-25">play</button>
+                  <button type="button" name="button" id="stop-h3" class="btn btn-light w-25">stop</button>
+              </div>
+          </div>
+      </div>
+       
+      <!--  Song Language Area -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img style="height:250px; width: 700px;"  src="https://www.nowrunning.com/content/movie/2000/kandu-1329/bg-video415202040946.jpg" alt="">
+            </div>
+            <div class="event-text">
+                <h4>konchum mainakale</h4>
+
+                <button type="button" name="button" id="start-e1" class="btn btn-light w-25">play</button>
+                <button type="button" name="button" id="stop-e1" class="btn btn-light w-25">stop</button>
+            </div>
+        </div>
+    </div>
+    <!--  Song Language Area -->
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img style="height:250px; width: 700px;"  src="https://lh3.googleusercontent.com/proxy/zKCeShJCeubBhTMzvVwAUFLXBrLpG2oQevTEJyJ-xGLsG2XxBcZmSU80pRtpS6lVdU8Z6zo-WLfIKEciDH_97r_OJ_SztoC1yOHVLiGYdw" alt="">
+            </div>
+            <div class="event-text">
+                <h4>Kandukonden kandukonden</h4>
+
+                <button type="button" name="button" id="start-e2" class="btn btn-light w-25">play</button>
+                <button type="button" name="button" id="stop-e2" class="btn btn-light w-25">stop</button>
+            </div>
+        </div>
+    </div>
+    <!--  Song Language Area -->
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img style="height:250px; width: 700px;"  src="https://www.hitxp.com/wp-content/uploads/2020/04/chinna-chinna-aasai.jpg" alt="">
+            </div>
+            <div class="event-text">
+                <h4>chinna chinna aasai</h4>
+
+                <button type="button" name="button" id="start-e3" class="btn btn-light w-25">play</button>
+                <button type="button" name="button" id="stop-e3" class="btn btn-light w-25">stop</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        </div>
+    </div>
+</section>
+<!-- ##### Song Language Area End ##### -->
+</body>
+</html>
+
+

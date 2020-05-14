@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  body{
+background-image: url("https://i.pinimg.com/originals/d6/68/ab/d668abc72809303852c27275e6a56775.gif");
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.footer {
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:white;
+   color:black;
+   text-align: center;
+}
+
+
+.active {
+  background-color:black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color:;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+.item{
+	width: 1500px;
+	height: 400px;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .right{
+    margin-left: 600px;
+  }
+</style>
+<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Music player</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/material/24/000000/music--v2.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="ED shereen.html">English songs
+    </a>
+    <a href="taylorswift.html">Tamil songs</a>
+    <a href="alanwalker.html">Vedio songs</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </div>
+  </div>
+  
+  <!-- #### header###### -->
+  <header>
+  
+    <center><h1 style="color:white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Mp3 English Songs</h1></center>
+</header>
+
+<!-- ##### Song Language Area Start ##### -->
+<section class="events-area section-padding-100">
+    <div class="container">
+        <div class="row">
+
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img style="height:250px; width: 700px;" src="https://m.media-amazon.com/images/I/A1aZInPBUJL._SS500_.jpg" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Shape of you</h4>
+
+                      <button type="button" name="button" id="start-e1" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-e1" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img  style="height:250px; width: 700px;" src="https://www.amoeba.com/admin/uploads/albums/covers/other//thinkingoutloud.jpg" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Thinking out loud</h4>
+
+                      <button type="button" name="button" id="start-e2" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-e2" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+          <!--  Song Language Area -->
+          <div class="col-12 col-md-6 col-lg-4">
+              <div class="single-event-area mb-30">
+                  <div class="event-thumbnail">
+                      <img style="height:250px; width: 700px;"  src="https://upload.wikimedia.org/wikipedia/en/8/80/Ed_Sheeran_Perfect_Single_cover.jpg" alt="">
+                  </div>
+                  <div class="event-text">
+                      <h4>Perfect</h4>
+
+                      <button type="button" name="button" id="start-e3" class="btn btn-light w-25">play</button>
+                      <button type="button" name="button" id="stop-e3" class="btn btn-light w-25">stop</button>
+                  </div>
+              </div>
+          </div>
+
+           <!--  Song Language Area -->
+           <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img style="height:250px; width: 700px;"  src="https://2.bp.blogspot.com/-zEGSruGyqNA/WGS2SLBupwI/AAAAAAAAApU/aqo89sdE2d4U9rerY3SMIbAu97fQEAgVQCLcB/s1600/alam-walker-faded-song-lyrics-750750.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h4>Faded</h4>
+
+                    <button type="button" name="button" id="start-e4" class="btn btn-light w-25">play</button>
+                    <button type="button" name="button" id="stop-e4" class="btn btn-light w-25">stop</button>
+                </div>
+            </div>
+        </div>
+        <!--  Song Language Area -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="single-event-area mb-30">
+                <div class="event-thumbnail">
+                    <img style="height:250px; width: 700px;"  src="https://i.ytimg.com/vi/ukUoPzO8AzI/maxresdefault.jpg" alt="">
+                </div>
+                <div class="event-text">
+                    <h4>Lost Control</h4>
+
+                    <button type="button" name="button" id="start-e5" class="btn btn-light w-25">play</button>
+                    <button type="button" name="button" id="stop-e5" class="btn btn-light w-25">stop</button>
+                </div>
+            </div>
+        </div>
+        
+         <!--  Song Language Area -->
+         <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img style="height:250px; width: 7000px;"  src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Justin_Bieber_-_Sorry_%28Official_Single_Cover%29.png/220px-Justin_Bieber_-_Sorry_%28Official_Single_Cover%29.png" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>Despacito</h4>
+
+                  <button type="button" name="button" id="start-e7" class="btn btn-light w-25">play</button>
+                  <button type="button" name="button" id="stop-e7" class="btn btn-light w-25">stop</button>
+              </div>
+          </div>
+      </div>
+      <!--  Song Language Area -->
+      <div class="col-12 col-md-6 col-lg-4">
+          <div class="single-event-area mb-30">
+              <div class="event-thumbnail">
+                  <img style="height:250px; width: 700px;"  src="https://d2tml28x3t0b85.cloudfront.net/tracks/artworks/000/447/642/original/3e591a.jpeg?1485706866" alt="">
+              </div>
+              <div class="event-text">
+                  <h4>ROckabye baby-remix</h4>
+
+                  <button type="button" name="button" id="start-e8" class="btn btn-light w-25">play</button>
+                  <button type="button" name="button" id="stop-e8" class="btn btn-light w-25">stop</button>
+              </div>
+          </div>
+      </div>
+      
+      <!--  Song Language Area -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img style="height:250px; width: 700px;"  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGisdHR0tLS0tLS0tLS0tLS0tLS0rLS0tKy0rKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS03Lf/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAABAgADBAUGB//EAEYQAAEEAAUCBAMEBgYHCQAAAAEAAgMRBAUSITETQQZRYXEigZEUMqGxBxUWQlLRIzNyssHwJTRDYnOC4SQmRFNldHWSo//EABkBAQEBAQEBAAAAAAAAAAAAAAEAAgMEBf/EACQRAQEAAwABBAICAwAAAAAAAAABAhESIQMTMVFBYRRxBCLw/9oADAMBAAIRAxEAPwDO0qUnpQr3PCSkQE1I0kIE1KAI2rRCkwCIRUi6VKThGlIoTAIgI0hAGo0mCNKRQEaT0pSiWkdKYBHSpEpHSmATAKSvSppVlKaVFXSNJ9KgapE0qaVZpTBiNmRWGI6VeIk/TWLk6TCqBGmbGrqS0sWukxkAI1aGlRZ03KUgKKFRWmttQGohqcBGl6HzyaFNKuAU0p2lWlENV1KaU7GlWlSlbpR0K2lVJgm0JtKkQBNSZrU4pBkIAmDE4Pona9HlqSF6RQLFcXoI3WrIp0pqT0iAlkmlENVwATtYFm5NzHbHDUdKydAQc1HTXDH0ohitLVArY0DYla2OlGpiVzu3fGSA5IUyFI01spQJTEJS1LNqslC0+lLpT4Y8ktRHQonwd1gUjSsAU0ro8uiAIgJw1ENSNE0pgE2lTSo6AI6UwamDVImlHSrAxOGI21pTpUDVkCNHpo6PLH0ohqu0o6FbGlWlGlboU0q2tK9KgYrg1O2O0bamO1ACua1Xsw1q9uGXPL1I74ejkwqU0rLdAVW6OlTKG4WKdKFKwhQJZJpVgjQDSeFc1td/wWbXTCE0JOmshBxWNulxjGc1VOWS53oqi70W45Za+1KUqwlTQtOaghRWliidxc1hhiIYr9COhPTn7akRphEVcGpg1HS4VtgTiBMArA0+SLlW5hPpWIgrBGE4jPknMRWLk6z0/wBKdIRDQrOkfJERJ2uf0QNQmLWguPDQSfYCyrmxrQ/pBxXRy7EvHLmdNtc6pSGCv/ss9Nc+HLfonzeSd2KbMXEuc2ePUSaZIXght8NBDePNbXwtK52Y5k1znFrHwhrS4lrba4nSDsPktH4VixOGzLBNxOF+ziXCOwjKkZIJOiOprOkmnXpFHzHqul8HRXmmbDykg/uOWe9GeltiTTP/AF22PU7R9hLtFnTq6rhq08X6rr2wk9lzM0X/AHhYP/Tif/2eu5aAE+7pT/H38vLvseLzSfFGHFSYeHCyGGER2NczB8TnkEWLr5Eet4eaZpLi8uy9zpHxySY5mGmdG7Q6xrY47bWRRri10/6Kpg2HGNOzmY/Ea/ozc/IfguDex7suwzo3aDNnJfE+rDSdTWuo7GnDj0WblaZhjI9Z8M+Fm4IvrE4mfXpH/aJBJp0393YVd7+wXDeK8+xGDzl8zS92Gijg+0R6iWtjlIYXhnFh2k2O9Duu98NYbGRMcMZim4h5dbXtjbHpbQGmmgXvZtaHCYdkmdY2ORoex+Cha5rhYc0uFghc/wC3e/Ek8OYyXP8AEYvNmzkvbhpYsSMOzU4NcyFrm9Qs4sus357dlb+jvwy7FYaDGyY3Gauo4lnW/oz05CACCCSDp337lbzOIGRZrgmRtDWMwWKa1rRTWgNNAALTfolwWN+zYeUYtowodLeH6TNR+J4P9JWr72/K3LXOyb1fP/R6MMOgYfIK82l0LcyrNwn4iqq7pXSeVp3hVklanlzyuiOs9yoGqBhKtZH5rVumMZaAj8ygYla547Kl7/Vc5uut5hHNSkJS5La6c1wucQqJCotaHaxoTaEoaUQuLv4MGJtCUOTglXlTQhqNqNarAFm1uYlCtaUtIhFrpJoxKmlQOU1IOoIWo8U5IcYyGPqBjI545ngt1dRsZvRyKvz3W4QkcGgk8AEn2G5Rtach45x8T58IwPkbJh8VBI57IjIyMSW1scr7AZrOkdz6UkxPhDGDFYjE4XMfs/2hzS5vQa/7jaFucffiuVgeGQcW6Hu0SfrDFO85pLOEw93yyPQ4jtoZ5r0LUnTO9+a43NfB+LkxEWKizDpTMwzMO9/Qa4yEFznvomm6ibqtl1OSYOeKFrMTP15ATcmgMsE2BpGwoUFrYfGGFdI9jXucI3tY+Rsb3Qse4hrWulArcmr48yFv+ojy1OXHZv4A6k00sGMlwzcT/rMcYBbJsbINjST355d50svN/B7JIcJBC7pMwk8UrQRqLxHdtJsbm7tbvA5rHM1zozbWvfGSQQNUbi19XyAQdxtsrIcWHtDmOa5p3DmkOaR5gjYpkotwjKtaXDZHox82MMgIlhZFo07t0EG9V7+1Js4zqPDNDpXG3HSxjGl8kjv4WMbu4o5RmrMREJY9QBLmlr26XtewlrmOHYgghPFZvq4qMxyLqY2HF9QARQyxaNNl3UBGrVe1XxS5vw74Qx2DEUceZ/0Ebw4xDDt+Jpfqe3USSL339V0mc57FhgNepz3304o2mSaSudEY3PuaHqrcszJmIjEsZOkkghwLXNc005j2ndrgQQQtTBjL1J8tiZUhkVai3MHO+tTF6Bk9EiBWuYxfUpjIqy4ooJkjFytKSgUxCCWSUonpTSrY0qpROWIK21zVwYm0J9SBevLuvdcZPkoYmDAl1qa1uS1i54w4aEbVetHUnis+9D60LS6kbTwzfWEI2lRtPC90wKxsyjLoZGt+86N4HuWkBZAK1TPEEJxjsCNXWbGJTsNFGtru9VEGqRzB7lrXeB3YeDLYXNcyNgjBlc5wAEtf0utx4cHAijxVdlg53nMuLdBh8OHR4fEydN2JNtdIwMdI8QNO9FrSNZ5va+Vn4nDZezHRxOwkZxEwfK2TpMItlkucTw74bsDnusrxZisM1sMeKjdI2adkUenlsrr0v1Bwcyt/iab3TodObziF0EsuDwkXVjxAhfLHDp6mGZGI43CnENqSNjQ23A3qO63uYZxi3RSOiwpg0sc4yYh0ZI0tJOiKJzi47bWWjdbvL8tigaWwxtYCS52kbuceXOPLnepsrD8RZ9h8HHrxDqDra1gbqc81uGt7/PbdWoO65vDAnBYbLoH3JNCx072m+lFINc0pP8Ty5wbe5Liey3Mfhro39infhmnmPS2WG/4msf8Acce9EA+SpyXN8vjwUmKwjGiBmp0jYow1+pu5Dmmviojk8EVskyTx1h8VKyGOLEgyXpc+INZs0u3cHHsPyV4Xlp8BluMlx+K/7WzXEI4RI+MGaOORge50ETaYwOJI1G/ud1ssZn+Gy9jMHhR18ReiOBjtTzI7cumf+6SSXEnfcnjjM8UDAtlg+14cPdO7oMkLGkAnhj3WCGmzQ37qzK5MH9qfhYMO1smFZZcyNjWR9aiWNI31OoE7djukbYeDjGDIfKH4nHYmy7pgXTaJawvIbFCzUBZI5Hc0sLwlJjJGzTRRwMjxGJklaZHveQ2hGdLIwGuFx2HaqOr5oeI8/wArlxDcPPM8SMLoi+J0jGN1lofDJIwi2uoWOBpNkLpf1lDDPDgmsLS+Nzow1rem1kYqubG3FBSZuHa4NaHkOdQ1FoLWl1bkNJNC+1lPSwsNm8b8TLhQHdSFrHvJA0kScaTdk/ILYUtMqygrKQpSV0grCEKUldKJqQpQKpaNKUoqyoiQgpaZXTQMSYNcm6Tlxnh6Ld/iqdCmhWmMoiM+S1tz5/SrSjpV7YXeSbRXKu2vb/SkRqaVeXJSiZHLGfhTSlKykdK105cVWAvIsHI79ZjMiSGS4+TB+hZ0wxh+o/BeqZ3i+hhppz/sonv9y1pIHzNLyl/gaKPKGY9of9qbHHidRcarWH/d/sH8EXIzCx12cD/TeB/9viP7r0P0mDfLv/kIP8VgZ9ncEeZ5dipZAyJ2FkfrNkf0jXaeAe5CXx/nmHmiwOIilDomZhFqeA4AaAS7Yi9grakekaFxTYRPnrte7cLhWmMHcB8rt3D1okfJdDkviHDYvX9mmbLo066Dhp1Xp+8BzpP0XK5zmDcuzb7TPbcPisO2PqBpcGyxkUHUL4A+vomqNTmrBFNnsLdmOw8c4A4DnMBea8yXldZ4FzzDy4bDwRzsfKzDx6owfibpa1rrHoSAuS3xOHzjMtLmxzxdODUCC6OJgaX15Gm/MFdn4IyqBmEw0scETJHYePVI2NjXu1MaTqeBZsgFEVJ+kPLDPgZdP9ZEBPGRyHxfFt8tQ+a0fgiR8eW4rMZd5pxPiSR5RtcGAeltcR7rs8+/1Wf/AIMv9xy53wbg+vkscN11cNLHflr6jf8AFP5WvDTZfkkf7PPBaC6SCTEOcfvGTeRrifMaWj5JshxJlxmVyPNudlz7PmRQJ/ArVQ+KgMrOW6H/AG7S7CdDSb3JbqvitJ+vputtm8P6tlyqaS+jBE/CzyAEhpcwBrjXYus/8vsja02uTj/TOO/4GG/JdauN8ETjFYzHY5gPRkMUMLiCNYiaQ5wvtdLtEyrRaQTFCk7XJCgnISkI2uSkJSnKVW1yUoJkCFbPKulE1KK6XLLD0dRVjYmhNQXm3Ht5qoPKOsp9lNk7jOqTV6lT6pi4KagtSs2Bp90Q0JeqFOqE7Z0agpSAfaJKvAvRZomvaWvaHNOxa4Agj1B2KDoWFugtaW1p0kDTpqtOniq7JkUjVYsmWQOADoInBo0tDo2HS3ybY2HoFDlUGnR0ItIOoN6bNIcdrDaq67rLUoq2ubVGFwEUV9OKOO6vQxrbq6vSN+T9VZNC1w0uaHA8hwBB9wVZpKOgq6i9qqZIWuaWuaC0ii0gFpHkQdiEY4w0BrQAAKAAAAA4AA4Ct0FHplHcano36UvYCCCAQRRB3BB5BHcJIYWsaGsa1rRw1oDWj2A2CyhGj0ke5DPQrE6TdWrSNVVqoaq8r5pSRgcCHAEHYgiwR6g8rL6IS9IK92Nfx8mM0ACgAAOANh9EVcYwlMfqr3Iv49VqIliUq7PtUaR0qsn1SF6tniL9ISloVJkQ6iN1cw5SEodQKdQeStrghKKBkHkoro+2yA9NrUD2+aYOauW/07cz7JqCbUn+FA6VdH2wtFKXt8kQ9vqnyzrH7B3slpPrHmg6QJlrNxx+wCYpdYR6gTuqY4/YtcrWv9lVrCnVCzbWpjGR1PRViZyr6wU6qmrr7XOn9En2lVGRI5yZBayxOp9oWC4pQ5XEZ7rP+0pTiVhakC5PEXdZhxCQzLG1Iak8wd1k9X1SmRY+pDUnQ6ZHUQL1RqQtWl0vLwlLgqS8JDKFaHUXkhA0sczBKcQrVXWLIKUuWEcxbrEd/E5pcPIhpAO/F7jZM+VWlc8fwyS9RYHU9VE8s+4xfDGYumg6r3WXSSED+Fus6W/IUtv1+17rzTwfn7YsLoLSNIdIHA1ZL3F+ou2oamepv0WP4b8QPnxTHSvovlqhQ+EMdoZ7anN7c2rbi9VEqLsQALJAA5JNADzJXA/tm37Q6NgfLctNawgfC1hGxOxtxv5KzPPEr2PLAABpANO1aXHn4gN+wuu1hFsam3bxZlE77sjHf2XtP5FZAxAXi+Hgi1uc2VxbqNX8Jvc3ZoWflzS2+GxU0BBbI5sX8ROpuojlwHrt8yd9k2KV6k+cc2qcVOWuLauhf14XMR+JC0trS8EnWaNN2tuk8uHPrsslviCOZl/EyQEEgjyFfCR94LM3+DdRtZcyDXaXijz8ubWQJwVzMmI1PJIF8+pa2qu/ZXazpFb0ORtv5Bb0xt0PWR665g5g5rrGwruefl6E7nZZrM2YXaSQ0+4rkg/iCk7b1s6cSrXNJ5G6PUKNQzPJsC/1Q1eqweqUOsVaXuVnX6qfNYPXKhnKdL3Kz6HmjpHmtd1lYQ6tVihd/EO252RZr5rU9S34jNoeaNhYULXEiyAPf8ldj5ImUC/STZA+9deXc/isWyXW3SZ5a3pcXj0VbpAtcMW0u0tkYT/DdO+hTl58x9QeFqSC+rfzGWXqt0q1mHzLW57ADbDXv6rJa++U8udzXGUJHPTtc1K97bqwlWz7GMA9vxWNmMLdGr+HseKJGoEcHZczgc/aMbiIy8BgOxJrhrRt7HUPot3meLY2N2p/LTX0P/U/JZs3K1M8Z401viJjWYzCPAAA1tu2gb8ijXa+/suj6bCAQdjuCDyF5z45zYDpAOLiA15b+611d63sgn5Kft3UTQAS/SO22oE7HjtpOyzP7Nzx+m+ziZzZnNBkoaeGkj7oPNqLgsX4nle8uIZvXIJ4Fc36Ip3+11j9ObjnIBAPII+Rrj6LOyPHiGaOQ/uEu29tlrEwaRytWPNttMqxQE7XvJ3c69J0n4vIjjlbLMc6JsX8I+62rAJB3BI9fwXNA7p3OPKNNTK6dPkT+ppi2ouaNVEgO+JwLiNhsPPssnXpkI0l7XaWGjyC47EN5vTtuDta5XBY58ZJaauwdz3BHb3WZ9rPJ/FGW2scpp0u7HEsDywEExuNGvZputgb2StdG6ISMMgLSKpxsWbAI4rY8E9/Zc3Pmsrzuf3Q3igA3igPLYfIKNzR3TEQAFX8QvURtQPbaj9SmXQysrrMPn72kh7jKG7g1buLIPBAuvP8lmz+JW6CQHbcgDerqtxsNx/Id/Peu+zubIr8E/2pxaG9h/Pha6Zds/xDG1moNIeRbbokkkfCTz636VzSyv1tHJTCACBdFxog3uCL3Pka+a86xGIc6rN0KHoPJWR4tzbo8gD5DhW1t6jl+bhuweQBtpvi6rbm/a+eFtYPEkR2dq23OoFoNc0SNz7Lx0Zk/wDi/wAih/gspudSBuk0R/vAEjz38leDt7Rh8S2YF0Lw4A1W1/K+Qq5MWWEAgX5Ebn2XjmFz2WM2x3lYPB4/ks4+LsTdtdXsNhfY+aDK9UjztnHcbHcDf0vv6LNix7Xet7kO3+hXhTs0e7k77We+3CvGezVWsgb9+PJFkMr1bxDmRihke3bYBtNshx2FkdrIWnyLO3CxJ8T5dPxULPNm+OPIea87dm0zmlhe4g0d/QbC/wDPCjMfIAKcdjY9CPVYs21MtPYsJmLA4xE/FG0SEf2rsb38/cI4vEMcQX1R2DXaSHDnjvtv8ivHf1tKJOqJHaxXxXvtwkxOYyyUDI6mmxudj3quFSK5PWsXh2aRo0tBA3a6v+YErn3CRof8TTocNWmrbsNiAbBojhcFNjpHBrS8kNoAXttdfmVbgXvc8tEhbqvUTdGgSbr2/FPwutu38P5u2Muc4ksB02CASTZBIPI25u9wrM18cNjdII2h4a+LRvs5jmW/cdw4fiuDe5vYnjexW9b/AI39FhSO7qxt0zlp1uYeNpXyscz4YxpOimkhwFON88k15ivNaLMM6nmf1XPIdtVGgKAFAdv+pWtaUztvqm2hZPiS57nk7uJJ9ybKMmLkIpz3GgQLJO2+34lU0g8+Q/z3RImbmzrlJv7wa4fNgP52sMLYZlKZGwuNfDC2LYAGmOdzXJ3G/qsF7KJHzRj8HL5Vm0USCotaG2cPDGKPELq87aPzKrxuUTRuAfE8bbUNW1bm235L1iPAVW9+zOPbb0WRGWM2JaD5FoB+VrW2eXi32F4GvSdJ4dY/K7Ujwj3u0gbk1vtv817McRGO3zEYIs97ohMMU0f7Mu3/APL5PyajcPNeSnIpowXOi1DgEOadO/JF/T3VRiN8Hnfa9l66/MQdui7c/wAOnfz3G61uHZqk/qCaaaD2sP3nN54H7hryRbKZjY5DM8LF0WiFjXOc4anlrQ4D0PbcDj1Wwky2F0TGsaxzgAC62Ms9ybId+HfnZdXjJGPaQ6KZoH7rXiMGxyA3tsFq/s+HAIMcpBFHW9z/AKXwfXlFzkamG3OYvD4ZsQbQ6hOkWW7EAE7gXXxVZtYGYNwzY7ZYfdctIsbE8XXPfuupblOD7NeDXPxH+SX9noCfvPP3a/ouwBBFVvwN/dHeP2uK5J2XQOifL1XNLBwQHW8jZvamm6vn3TZRkbZ4y7rNa5p4dVURZJokjny7Lu8DkhbszWdxt0iBW52Oj1291nR+HsR92MuZZ/eYw7dxZYPVamUHDziHw8HyPZFOx2jYlwLbsbkEWNvdbLD5B0qfK5g0AklrrJP7pp2wP8gvQoshxNjU/UBxbYR5DnSrGeHsQXkuLCyxQ1AcG+zbRtcx59gPCsD2hxmfwL00+nEfE000+Y+q28PheJgIOJNOLSQ6FsgJBNct25K7QeHnAbFtnkHSdu1Es9uykmRuO1N2/wB2PfueWq8n/Vw8fgXBH/xcljbcxtN+ocy0j/BWDsAYp1Vd64z69m0u0l8Ou4DGEckHTvxWwA8uyWPInt7bUbDbbfoA00nyNRwWZ+FcOxhfHMXlrb0hzST2GwCwMs8OiXZzi0tdTgaGxAqjRGrck2vRP2euz0zR25cOL3ry4Uj8M0PhaW77i3j5mr8kap8PPB4Y0yDqEmPUAdLm6iNVGtqv+a30ng7CCtPUHnbtV+Q42XWfs/ufhJ9fiH0sK05YWCtG3G1jkd/pz6K1R4cTJ4Qw9V1nsA54v6kcbLnc0y1zJC6PquYCQXFp4qtVhobRC9QOW76gw7A/xdtyCLpVPyl9fcA9aF77HkkV6q1TvF5H9mf/AAnf8R5quXBPofC6jxTSb5229j9CvVH+GDqBpoDTYDQAbNtN2ON/lsnOQyedVv8ACK2AsA0OaVqjw8kjwchsNjkNbn4HbV3O2yEsLm8tI9SCOF67+zTnVqlNCrAtv1I7evqsSXwQyX77nfu07UdXlVFuw789wryPDy3pbX2TNw52NbXS9Uw/gPDC7Eh3NanOqtuwG6s/YqEAfE5vN0O2/He79eE+RuPNehcbbcLDiLo0NQaR27aVZJC37u7jW9Dyu6r2Xfs8K4eIgB0xBJL3DbS3Q7sBtfG/8VLa4Pw9htP9W438RBc6yb2AF+qzJWrY8g+zE7hpI7Gwova48gwxAqBhHbv/AIqLehtuGtHkEwaBwFFEgQUbUUSBtG0VFJLRtRREQAJrUUTFRtEKKJqFBxUUWSrY42jf5KKJBXn4T7j8iml5PuPyCiigB7+5/NFRRRQ8osUUUFkvA/z3VFqKKhVvcb5UCiigDioOFFFIqdh59lFFVKfXvVWsdrACSALIAut/qoopCooopP/Z" alt="">
+            </div>
+            <div class="event-text">
+                <h4>all of me</h4>
+
+                <button type="button" name="button" id="start-e10" class="btn btn-light w-25">play</button>
+                <button type="button" name="button" id="stop-e10" class="btn btn-light w-25">stop</button>
+            </div>
+        </div>
+    </div>
+    <!--  Song Language Area -->
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-event-area mb-30">
+            <div class="event-thumbnail">
+                <img style="height:250px; width: 700px;"  src="https://news.artnet.com/app/news-upload/2015/12/do-no-reuse-taylor-swift-the-beat-bb36-sarah-barlow-billboard-6501.jpg" alt="">
+            </div>
+            <div class="event-text">
+                <h4>blank space</h4>
+
+                <button type="button" name="button" id="start-e11" class="btn btn-light w-25">play</button>
+                <button type="button" name="button" id="stop-e11" class="btn btn-light w-25">stop</button>
+            </div>
+        </div>
+    </div>
+    
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ##### Song Language Area End ##### -->
+</body>
+</html>
